@@ -50,13 +50,13 @@ public class Main {
 				answers.append(",");
 			}
 			
-			questions.append(createQuestion(type, words.get(i), i, max));
+			questions.append("\n").append(createQuestion(type, words.get(i), i, max));
 			answers.append(createAnswer(words.get(i)[2], i));
 		}
 		
-		archive.append("{").append("questions:[").append(questions).append("],").
-		append("answers:").append("[").append(answers).append("],").
-		append("randomize: false").append("}");
+		archive.append("{\n").append("questions:[\n").append(questions).append("],\n").
+		append("answers:").append("[\n").append(answers).append("],").
+		append("randomize: false").append("\n}");
 		
 		File fp = new File("questions.dat");
 		
@@ -72,7 +72,7 @@ public class Main {
 	}
 	
 	public static String createAnswer(String ans, int pos) {
-		return "{id:"+pos+", text:\""+ans+"\"}";
+		return "{id:"+pos+", text:\""+ans+"\"}\n";
 	}
 	
 	public static String createQuestion(int type, String[] data, int pos, int max) {
@@ -83,12 +83,12 @@ public class Main {
 			quest = "Qual é esta forma?";
 		}
 		
-		return "{"+
-		      	"title: \""+quest+" "+data[0]+"\","+
-		      	"explanation: \"Significado de "+data[0]+": "+data[1]+".\","+
-		      	"correct: "+pos+","+
-			     "patterns: ["+ createPatterns(max, pos) + "]"+
-		    	"}";
+		return "	{"+
+		      	"\n		title: \""+quest+" "+data[0]+"\","+
+		      	"\n		explanation: \"Significado de "+data[0]+": "+data[1]+".\","+
+		      	"\n		correct: "+pos+","+
+			    "\n		patterns: ["+ createPatterns(max, pos) + "]"+
+		    	"\n	}";
 	}
 	
 	public static String createPatterns(int max, int pos) {

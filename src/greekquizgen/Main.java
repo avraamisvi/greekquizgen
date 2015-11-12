@@ -19,7 +19,7 @@ public class Main {
 		//words[2] resposta
 		
 		List<String[]> words = new ArrayList<String[]>();
-		FileReader fr = new FileReader("words.txt");
+		FileReader fr = new FileReader(args[1]);
 		BufferedReader rd = new BufferedReader(fr);
 		
 		String line = rd.readLine();
@@ -42,6 +42,9 @@ public class Main {
 		StringBuffer answers = new StringBuffer();
 		
 		for(int i = 0; i < words.size(); i++) {
+			
+			System.out.println("processando:" + words.get(i)[0]);
+			
 			if(i>0) {
 				questions.append(",");
 				answers.append(",");

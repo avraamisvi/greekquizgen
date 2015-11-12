@@ -13,6 +13,11 @@ import java.util.Random;
 public class Main {
 	
 	public static void main(String[] args) throws IOException {
+		
+		//words[0] palavra
+		//words[1] explicacao
+		//words[2] resposta
+		
 		List<String[]> words = new ArrayList<String[]>();
 		FileReader fr = new FileReader("words.txt");
 		BufferedReader rd = new BufferedReader(fr);
@@ -25,12 +30,12 @@ public class Main {
 		}
 		rd.close();
 		
-		processWords(words, words.size());
+		processWords(Integer.parseInt(args[0]), words, words.size());
 	
 		System.out.println("Finished");
 	}
 	
-	public static void processWords(List<String[]> words, int max) throws IOException {
+	public static void processWords(int type, List<String[]> words, int max) throws IOException {
 		
 		StringBuffer archive = new StringBuffer();
 		StringBuffer questions = new StringBuffer();
@@ -42,7 +47,7 @@ public class Main {
 				answers.append(",");
 			}
 			
-			questions.append(createQuestion(words.get(i), i, max));
+			questions.append(createQuestion(type, words.get(i), i, max));
 			answers.append(createAnswer(words.get(i)[2], i));
 		}
 		
@@ -67,9 +72,16 @@ public class Main {
 		return "{id:"+pos+", text:\""+ans+"\"}";
 	}
 	
-	public static String createQuestion(String[] data, int pos, int max) {
+	public static String createQuestion(int type, String[] data, int pos, int max) {
+		
+		String quest = "Traduza:";
+		
+		if(type == 1) {
+			quest = "Qual é esta forma?";
+		}
+		
 		return "{"+
-		      	"title: \"Traduza: "+data[0]+"\","+
+		      	"title: \""+quest+" "+data[0]+"\","+
 		      	"explanation: \"Significado de "+data[0]+": "+data[1]+".\","+
 		      	"correct: "+pos+","+
 			     "patterns: ["+ createPatterns(max, pos) + "]"+

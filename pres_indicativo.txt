@@ -1,12 +1,20 @@
-//ativa
-λύω@
-λύεις@
-λύετε@
-λύουσι(ν)@
-//passiva
-λύομαι
-λύη
-λύεται
-λύομεθα
-λύεσθε
-λύονται
+λύω@Resposta certa:1ª pessoa singular do presente do indicativo ativo. λύω: (eu) desato, destruo, liberto@1ª pessoa singular do presente do indicativo ativo
+λύεις@Resposta certa:2ª pessoa singular do presente do indicativo ativo. λύω: (eu) desato, destruo, liberto@2ª pessoa singular do presente do indicativo ativo
+λύει@Resposta certa:3ª pessoa singular do presente do indicativo ativo. λύω: (eu) desato, destruo, liberto@3ª pessoa singular do presente do indicativo ativo
+λύομεν@Resposta certa:1ª pessoa plural do presente do indicativo ativo. λύω: (eu) desato, destruo, liberto@1ª pessoa plural do presente do indicativo ativo
+λύετε@Resposta certa:2ª pessoa plural do presente do indicativo ativo. λύω: (eu) desato, destruo, liberto@2ª pessoa plural do presente do indicativo ativo
+λέγειν@Resposta certa:infinitivo do presente, voz ativa. λύω: (eu) desato, destruo, liberto@infinitivo do presente, voz ativa
+λύουσι(ν)@Resposta certa:3ª pessoa plural do presente do indicativo ativo. λύω: (eu) desato, destruo, liberto@3ª pessoa plural do presente do indicativo ativo
+λύομαι@Resposta certa:1ª pessoa singular do presente do indicativo passivo/médio. λύω: (eu) desato, destruo, liberto@1ª pessoa singular do presente do indicativo passivo/médio
+λύῃ@Resposta certa:2ª pessoa singular do presente do indicativo passivo/médio. λύω: (eu) desato, destruo, liberto@2ª pessoa singular do presente do indicativo passivo/médio
+λύεται@Resposta certa:3ª pessoa singular do presente do indicativo passivo/médio. λύω: (eu) desato, destruo, liberto@3ª pessoa singular do presente do indicativo passivo/médio
+λύομεθα@Resposta certa:1ª pessoa plural do presente do indicativo passivo/médio. λύω: (eu) desato, destruo, liberto@1ª pessoa plural do presente do indicativo passivo/médio
+λύεσθε@Resposta certa:2ª pessoa plural do presente do indicativo passivo/médio. λύω: (eu) desato, destruo, liberto@2ª pessoa plural do presente do indicativo passivo/médio
+λύονται@Resposta certa:3ª pessoa plural do presente do indicativo passivo/médio. λύω: (eu) desato, destruo, liberto@3ª pessoa plural do presente do indicativo passivo/médio
+λύεσθαι@Resposta certa:infinitivo do presente, voz média. λύω: (eu) desato, destruo, liberto@infinitivo do presente, voz média
+εἰμί@Resposta certa:1ª pessoa singular do presente do indicativo ativo. εἰμί: eu sou, estou@1ª pessoa singular do presente do indicativo ativo
+εἶ@Resposta certa:2ª pessoa singular do presente do indicativo ativo. εἶ: tu és, estás@2ª pessoa singular do presente do indicativo ativo
+ἐστίν@Resposta certa:3ª pessoa singular do presente do indicativo ativo. ἐστίν: ele/ela é, está@3ª pessoa singular do presente do indicativo ativo
+ἐσμέν@Resposta certa:1ª pessoa plural do presente do indicativo ativo. ἐσμέν: nós somos, estamos@1ª pessoa plural do presente do indicativo ativo
+ἐστέ@Resposta certa:2ª pessoa plural do presente do indicativo ativo. ἐστέ: vós sois, estais@2ª pessoa plural do presente do indicativo ativo
+εἰσίν@Resposta certa:3ª pessoa plural do presente do indicativo ativo. εἰσίν: eles/elas são, estão@3ª pessoa plural do presente do indicativo ativo

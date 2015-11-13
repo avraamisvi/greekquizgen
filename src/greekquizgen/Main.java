@@ -30,12 +30,12 @@ public class Main {
 		}
 		rd.close();
 		
-		processWords(Integer.parseInt(args[0]), words, words.size());
+		processWords(args[2], Integer.parseInt(args[0]), words, words.size());
 	
 		System.out.println("Finished");
 	}
 	
-	public static void processWords(int type, List<String[]> words, int max) throws IOException {
+	public static void processWords(String output, int type, List<String[]> words, int max) throws IOException {
 		
 		StringBuffer archive = new StringBuffer();
 		StringBuffer questions = new StringBuffer();
@@ -58,7 +58,7 @@ public class Main {
 		append("answers:").append("[\n").append(answers).append("],").
 		append("randomize: false").append("\n}");
 		
-		File fp = new File("questions.dat");
+		File fp = new File(output);
 		
 		if(fp.exists()) {
 			fp.delete();
@@ -85,7 +85,7 @@ public class Main {
 		
 		return "	{"+
 		      	"\n		title: \""+quest+" "+data[0]+"\","+
-		      	"\n		explanation: \"Significado de "+data[0]+": "+data[1]+".\","+
+		      	"\n		explanation: \""+data[1]+".\","+
 		      	"\n		correct: "+pos+","+
 			    "\n		patterns: ["+ createPatterns(max, pos) + "]"+
 		    	"\n	}";

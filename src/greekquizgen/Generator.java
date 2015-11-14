@@ -10,7 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Main {
+import greekquizgen.gui.Question;
+
+public class Generator {
 	
 	public static void main(String[] args) throws IOException {
 		
@@ -33,6 +35,17 @@ public class Main {
 		processWords(args[2], Integer.parseInt(args[0]), words, words.size());
 	
 		System.out.println("Finished");
+	}
+	
+	public static void gerar(ArrayList<Question> questions, String output, int type) throws IOException {
+		
+		List<String[]> words = new ArrayList<String[]>();
+		
+		for(Question question: questions) {
+			words.add(new String[]{question.word, question.explanation, question.answer});
+		}
+		
+		processWords(output, type, words, words.size());
 	}
 	
 	public static void processWords(String output, int type, List<String[]> words, int max) throws IOException {
@@ -104,7 +117,7 @@ public class Main {
 			
 			for(int j = 0; j < 4; j++) {
 				
-				int num = rand.nextInt(max+1);
+				int num = rand.nextInt(max);
 				
 				if(num == pos) {
 					gerou=true;
@@ -120,7 +133,7 @@ public class Main {
 			if(!gerou) {
 				line.append(",").append(pos);
 			} else {
-				int num = rand.nextInt(max+1);
+				int num = rand.nextInt(max);
 				line.append(",").append(num);
 			}
 			

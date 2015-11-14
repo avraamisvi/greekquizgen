@@ -1,0 +1,132 @@
+{
+questions:[
+
+	{
+		title: "Qual é esta forma? λύω",
+		explanation: "Resposta certa:1ª pessoa singular do presente do subjuntivo ativo. Trad: (que) eu desate ou esteja desatando.",
+		correct: 0,
+		patterns: [[14,17,6,15,0],[16,1,10,5,0],[12,14,15,1,0]]
+	},
+	{
+		title: "Qual é esta forma? λύῃς",
+		explanation: "Resposta certa:2ª pessoa singular do presente do subjuntivo ativo. Trad: (que) tu desates ou estejas desatando.",
+		correct: 1,
+		patterns: [[13,1,7,1,6],[0,7,13,2,1],[15,2,16,16,1]]
+	},
+	{
+		title: "Qual é esta forma? λύῃ",
+		explanation: "Resposta certa:3ª pessoa singular do presente do subjuntivo ativo. Trad: (que) ele/ela desate ou esteja desatando.",
+		correct: 2,
+		patterns: [[5,16,5,8,2],[16,7,9,0,2],[12,12,13,8,2]]
+	},
+	{
+		title: "Qual é esta forma? λύωμεν",
+		explanation: "Resposta certa:1ª pessoa plural do presente do subjuntivo ativo. Trad: (que) nós desatemos ou estejamos desatando.",
+		correct: 3,
+		patterns: [[12,14,16,13,3],[11,11,2,8,3],[2,7,10,17,3]]
+	},
+	{
+		title: "Qual é esta forma? λύητε",
+		explanation: "Resposta certa:2ª pessoa plural do presente do subjuntivo ativo. Trad: (que) vós desatais ou estejais desatando.",
+		correct: 4,
+		patterns: [[5,6,15,10,4],[9,7,3,14,4],[13,8,1,15,4]]
+	},
+	{
+		title: "Qual é esta forma? λύωσιν",
+		explanation: "Resposta certa:3ª pessoa plural do presente do subjuntivo ativo. Trad: (que) eles/elas desatem ou estejam desatando.",
+		correct: 5,
+		patterns: [[16,13,9,8,5],[3,2,0,5,6],[0,16,5,16,14]]
+	},
+	{
+		title: "Qual é esta forma? λύωμαι",
+		explanation: "Resposta certa:1ª pessoa singular do presente do subjuntivo passivo e médio. Trad: (que) eu me desate ou desate para mim.",
+		correct: 6,
+		patterns: [[16,0,17,15,6],[4,3,6,17,8],[13,7,0,6,1]]
+	},
+	{
+		title: "Qual é esta forma? λύῃ",
+		explanation: "Resposta certa:2ª pessoa singular do presente do subjuntivo passivo e médio. Trad: (que) tu te desates ou tu sejas desatado.",
+		correct: 7,
+		patterns: [[11,4,4,4,7],[9,2,6,5,7],[10,4,8,8,7]]
+	},
+	{
+		title: "Qual é esta forma? λύηται",
+		explanation: "Resposta certa:3ª pessoa singular do presente do subjuntivo passivo e médio. Trad: (que) ele/ela se desate ou seja desatado(a).",
+		correct: 8,
+		patterns: [[16,13,13,6,8],[0,11,10,14,8],[6,4,9,6,8]]
+	},
+	{
+		title: "Qual é esta forma? λυώμεθα",
+		explanation: "Resposta certa:1ª pessoa plural do presente do subjuntivo passivo e médio. Trad: (que) nós nos desatemos ou sejamos desatados.",
+		correct: 9,
+		patterns: [[13,16,15,8,9],[8,14,8,15,9],[16,0,14,3,9]]
+	},
+	{
+		title: "Qual é esta forma? λύησθε",
+		explanation: "Resposta certa:2ª pessoa plural do presente do subjuntivo passivo e médio. Trad: (que) vós vos desateis ou tu sejais desatados.",
+		correct: 10,
+		patterns: [[16,1,10,11,16],[7,8,14,7,10],[14,17,0,7,10]]
+	},
+	{
+		title: "Qual é esta forma? λύωνται",
+		explanation: "Resposta certa:3ª pessoa plural do presente do subjuntivo passivo e médio. Trad: (que) eles/elas se desatem ou sejam desatados.",
+		correct: 11,
+		patterns: [[9,3,6,10,11],[9,3,4,1,11],[11,2,5,1,16]]
+	},
+	{
+		title: "Qual é esta forma? ὦ",
+		explanation: "Resposta certa:1ª pessoa singular do presente do subjuntivo. Trad: (que) eu seja.",
+		correct: 12,
+		patterns: [[5,4,12,0,1],[6,0,17,14,12],[17,16,16,9,12]]
+	},
+	{
+		title: "Qual é esta forma? ᾖς",
+		explanation: "Resposta certa:2ª pessoa singular do presente do subjuntivo. Trad: (que) tu sejas.",
+		correct: 13,
+		patterns: [[15,9,6,7,13],[4,2,15,3,13],[4,3,0,1,13]]
+	},
+	{
+		title: "Qual é esta forma? ᾖ",
+		explanation: "Resposta certa:3ª pessoa singular do presente do subjuntivo. Trad: (que) ele/ela seja.",
+		correct: 14,
+		patterns: [[15,3,10,14,16],[3,10,0,3,14],[10,13,6,4,14]]
+	},
+	{
+		title: "Qual é esta forma? ὦμεν",
+		explanation: "Resposta certa:1ª pessoa plural do presente do subjuntivo. Trad: (que) nós sejamos.",
+		correct: 15,
+		patterns: [[7,6,2,16,15],[3,3,13,13,15],[1,17,6,4,15]]
+	},
+	{
+		title: "Qual é esta forma? ᾖτε",
+		explanation: "Resposta certa:2ª pessoa plural do presente do subjuntivo. Trad: (que) vós sejais.",
+		correct: 16,
+		patterns: [[2,0,10,2,16],[5,0,6,10,16],[2,16,12,12,3]]
+	},
+	{
+		title: "Qual é esta forma? ὦσιν",
+		explanation: "Resposta certa:3ª pessoa plural do presente do subjuntivo. Trad: (que) eles/elas sejam.",
+		correct: 17,
+		patterns: [[14,14,2,12,17],[7,12,10,10,17],[11,10,8,9,17]]
+	}],
+answers:[
+{id:0, text:"1ª pessoa singular do presente do subjuntivo ativo"}
+,{id:1, text:"2ª pessoa singular do presente do subjuntivo ativo"}
+,{id:2, text:"3ª pessoa singular do presente do subjuntivo ativo"}
+,{id:3, text:"1ª pessoa plural do presente do subjuntivo ativo"}
+,{id:4, text:"2ª pessoa plural do presente do subjuntivo ativo"}
+,{id:5, text:"3ª pessoa plural do presente do subjuntivo ativo"}
+,{id:6, text:"1ª pessoa singular do presente do subjuntivo passivo e médio"}
+,{id:7, text:"2ª pessoa singular do presente do subjuntivo passivo e médio"}
+,{id:8, text:"3ª pessoa singular do presente do subjuntivo passivo e médio"}
+,{id:9, text:"1ª pessoa plural do presente do subjuntivo passivo e médio"}
+,{id:10, text:"2ª pessoa plural do presente do subjuntivo passivo e médio"}
+,{id:11, text:"3ª pessoa plural do presente do subjuntivo passivo e médio"}
+,{id:12, text:"1ª pessoa singular do presente do subjuntivo"}
+,{id:13, text:"2ª pessoa singular do presente do subjuntivo"}
+,{id:14, text:"3ª pessoa singular do presente do subjuntivo"}
+,{id:15, text:"1ª pessoa plural do presente do subjuntivo"}
+,{id:16, text:"2ª pessoa plural do presente do subjuntivo"}
+,{id:17, text:"3ª pessoa plural do presente do subjuntivo"}
+],randomize: false
+}

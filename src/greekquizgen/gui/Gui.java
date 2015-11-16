@@ -58,7 +58,7 @@ public class Gui extends javax.swing.JFrame {
 
        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-       jLabel1.setText("Palavra");
+       jLabel1.setText("Pergunta");
 
        jLabel2.setText("Explicação");
 
@@ -254,25 +254,25 @@ public class Gui extends javax.swing.JFrame {
 		}
 
 	 //Custom button text
-	   Object[] options = {"Vocabulary",
-	                       "Grammar",
-	                       "Cancel"};
-	   int n = JOptionPane.showOptionDialog(Gui.this,
-	       "What type are you generating?",
-	       "Type",
-	       JOptionPane.YES_NO_CANCEL_OPTION,
-	       JOptionPane.QUESTION_MESSAGE,
-	       null,
-	       options,
-	       options[2]);
+//	   Object[] options = {"Vocabulary",
+//	                       "Grammar",
+//	                       "Cancel"};
+//	   int n = JOptionPane.showOptionDialog(Gui.this,
+//	       "What type are you generating?",
+//	       "Type",
+//	       JOptionPane.YES_NO_CANCEL_OPTION,
+//	       JOptionPane.QUESTION_MESSAGE,
+//	       null,
+//	       options,
+//	       options[2]);
 	   
-	   if(n < 2) {
+//	   if(n < 2) {
 		   try {
-			Generator.gerar(questions, txtArquivo.getText() + ".dat", n);
+			Generator.gerar(questions, txtArquivo.getText() + ".dat", -1);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	   }
+//	   }
    }                                        
 
    private void btnAnteriorActionPerformed(java.awt.event.ActionEvent evt) {                                            

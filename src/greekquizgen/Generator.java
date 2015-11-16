@@ -90,14 +90,14 @@ public class Generator {
 	
 	public static String createQuestion(int type, String[] data, int pos, int max) {
 		
-		String quest = "Traduza:";
-		
-		if(type == 1) {
-			quest = "Qual é esta forma?";
-		}
+//		String quest = "Traduza:";
+//		
+//		if(type == 1) {
+//			quest = "Qual é esta forma?";
+//		}
 		
 		return "	{"+
-		      	"\n		title: \""+quest+" "+data[0]+"\","+
+		      	"\n		title: \""+data[0]+"\","+
 		      	"\n		explanation: \""+data[1]+".\","+
 		      	"\n		correct: "+pos+","+
 			    "\n		patterns: ["+ createPatterns(max, pos) + "]"+
@@ -112,10 +112,13 @@ public class Generator {
 		StringBuffer line = new StringBuffer();
 		
 		Random rand = new Random();
+		Random randGer = new Random();
+		
+		int[][]gerados = new int[3][5];
 		
 		for(int i = 0; i < 3; i++) {
 			
-			for(int j = 0; j < 4; j++) {
+			for(int j = 0; j < 5; j++) {
 				
 				int num = rand.nextInt(max);
 				
@@ -123,21 +126,26 @@ public class Generator {
 					gerou=true;
 				}
 				
+				gerados[i][j]=num;
+			}
+			
+			int idx = randGer.nextInt(5);
+			gerados[i][idx]=pos;
+			gerou = false;
+			
+		}
+		
+		for(int i = 0; i < 3; i++) {
+			
+			for(int j = 0; j < 5; j++) {
+				
 				if(j == 0) {
-					line.append("[").append(num);
+					line.append("[").append(gerados[i][j]);
 				}	else {
-					line.append(",").append(num);
+					line.append(",").append(gerados[i][j]);
 				}			
 			}
 			
-			if(!gerou) {
-				line.append(",").append(pos);
-			} else {
-				int num = rand.nextInt(max);
-				line.append(",").append(num);
-			}
-			
-			gerou = false;
 			if(i<2) {
 				line.append("],");
 			} else {
@@ -147,7 +155,6 @@ public class Generator {
 			lines.append(line);
 			
 			line = new StringBuffer();
-			
 		}
 		
 		return lines.toString();
